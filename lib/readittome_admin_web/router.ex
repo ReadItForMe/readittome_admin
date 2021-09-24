@@ -22,7 +22,7 @@ defmodule ReadittomeAdminWeb.Router do
   scope "/api", ReadittomeAdminWeb.Api, as: :api do
     pipe_through :api
 
-    post "/articles", ArticleController, :create
+    resources "/articles", ArticleController, only: [:create]
   end
 
   if Mix.env() in [:dev, :test] do

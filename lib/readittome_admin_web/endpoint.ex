@@ -10,7 +10,6 @@ defmodule ReadittomeAdminWeb.Endpoint do
     signing_salt: "23x+5s3g"
   ]
 
-  plug ReadittomeAdminWeb.ConnInterceptor
   socket "/socket", ReadittomeAdminWeb.UserSocket,
     websocket: [timeout: 45_000],
     longpoll: false

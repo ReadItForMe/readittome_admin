@@ -25,7 +25,7 @@ config :readittome_admin, ReadittomeAdmin.Repo,
   ssl: true
 
 # Do not print debug messages in production
-config :logger, level: :debug, truncate: :infinity
+config :logger, level: :info
 
 # ## SSL Support
 #
