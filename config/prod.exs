@@ -10,6 +10,7 @@ use Mix.Config
 # which you should run after static files are built and
 # before starting your production server.
 config :readittome_admin, ReadittomeAdminWeb.Endpoint,
+  http: [port: {:system, "PORT"}],
   url: [scheme: "https", host: "readittome-admin.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
   cache_static_manifest: "priv/static/manifest.json",
