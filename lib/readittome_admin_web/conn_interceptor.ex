@@ -6,7 +6,7 @@ defmodule ReadittomeAdminWeb.ConnInterceptor do
   def init(default), do: default
 
   def call(conn, _default) do
-    Logger.info(Enum.map_join(conn, ", ", fn {key, val} -> ~s{"#{key}", "#{val}"} end))
+    Logger.info(Kernel.inspect(conn))
     conn
   end
 end
