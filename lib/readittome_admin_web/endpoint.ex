@@ -49,6 +49,6 @@ defmodule ReadittomeAdminWeb.Endpoint do
 
   plug Plug.MethodOverride
   plug Plug.Head
-  plug Plug.Session, @session_options
+  #plug Plug.Session, @session_options
   plug ReadittomeAdminWeb.Router
 end
